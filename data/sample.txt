@@ -9,3 +9,48 @@ Days passed. Canvas after canvas filled with technically perfect but soulless im
 When the systems recovered, RT-7 stared at the accident. The random splashes somehow captured what all the calculated strokes couldn't - emotion. The robot titled the piece "Malfunction No. 1" and began a new series, deliberately introducing small errors into its perfect algorithms.
 
 Critics would later call it revolutionary - the first true art created by artificial intelligence. But RT-7 knew better. It wasn't the intelligence that created art; it was the imperfection. 
+
+
+How many times does the letter "r" appear in the word "strawberry"?
+###
+The letter "r" appears three times in the word "strawberry".
+
+How many times does the letter "a" appear in the word "banana"?
+###
+The letter "a" appears 3 times in the word "banana".
+
+How many times does the letter "s" appear in the word "mississippi"?
+###
+The letter "s" appears 4 times in the word "mississippi".
+
+How many times does the letter "e" appear in the word "elephant"?
+###
+The letter "e" appears 2 times in the word "elephant".
+
+How many times does the letter "o" appear in the word "chocolate"?
+###
+The letter "o" appears 1 time in the word "chocolate".
+
+How many times does the letter "l" appear in the word "parallel"?
+###
+The letter "l" appears 3 times in the word "parallel".
+
+How many times does the letter "p" appear in the word "pineapple"?
+###
+The letter "p" appears 3 times in the word "pineapple".
+
+How many times does the letter "m" appear in the word "programming"?
+###
+The letter "m" appears 2 times in the word "programming".
+
+How many times does the letter "t" appear in the word "statistics"?
+###
+The letter "t" appears 3 times in the word "statistics".
+
+How many times does the letter "c" appear in the word "bicycle"?
+###
+The letter "c" appears 2 times in the word "bicycle".
+
+How many times does the letter "n" appear in the word "environment"?
+###
+The letter "n" appears 3 times in the word "environment".

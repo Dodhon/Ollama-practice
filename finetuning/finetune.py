@@ -14,22 +14,21 @@ from peft import LoraConfig, get_peft_model
 
 def main():
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description="Minimal LoRA finetuning")
-    parser.add_argument("--input", "-i", required=True, help="Input text file for training")
-    parser.add_argument("--output", "-o", default="./lora_model", help="Output directory for model")
-    args = parser.parse_args()
+    data_path = "/Users/thuptenwangpo/Documents/GitHub/Ollama-practice/data/sample.txt"
+    output_dir = "/Users/thuptenwangpo/Documents/GitHub/Ollama-practice/lora_finetuned_small_model"
     
     # Check if input file exists
-    if not os.path.exists(args.input):
-        print(f"Error: Input file {args.input} not found")
+    if not os.path.exists(data_path):
+        print(f"Error: Input file {data_path} not found")
         return
     
     # Create output directory
-    os.makedirs(args.output, exist_ok=True)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
     
     # Load training data
-    print(f"Loading training data from {args.input}")
-    with open(args.input, 'r', encoding='utf-8') as f:
+    print(f"Loading training data from {data_path}")
+    with open(data_path, 'r', encoding='utf-8') as f:
         text = f.read()
     
     # Split into instruction/response pairs
@@ -100,11 +99,11 @@ def main():
     
     # Training arguments
     training_args = TrainingArguments(
-        output_dir=args.output,
+        output_dir=output_dir,
         per_device_train_batch_size=4,
         gradient_accumulation_steps=4,
         learning_rate=2e-4,
-        num_train_epochs=1,
+        num_train_epochs=2,
         logging_steps=10,
         save_strategy="epoch",
         report_to="none"
@@ -129,9 +128,9 @@ def main():
     trainer.train()
     
     # Save model
-    print(f"Saving model to {args.output}")
-    model.save_pretrained(args.output)
-    tokenizer.save_pretrained(args.output)
+    print(f"Saving model to {output_dir}")
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
     
     print("Finetuning complete!")
 
